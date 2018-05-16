@@ -51,8 +51,7 @@ public class USERUI extends JFrame {
 
 		Collections.sort(sList);
 		for (int i = 0; i < sList.size(); i++) {
-			if (!sList.get(i).getUnits_seq().equals("1")
-					&& sList.get(i).getUnits_seq().equals(ar.get(i).getUnits_seq())) {
+			if (!ar.get(i).getUnits_seq().equals("1")&&ar.get(i).getUnits_seq().equals(sList.get(i).getUnits_seq())) {
 				resList.add(sList.get(i));
 			}
 		}
